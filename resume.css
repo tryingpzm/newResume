@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style:none;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+}
+body{
+    font: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.wrapper{
+    height:100vh;
+    padding:1em calc(50% - 450px);
+    display:flex;
+    background-color: #E3E3E3;
+}
+.siderbar{
+    width:200px;
+    /*background-color: #43B6B1;*/
+    background-color: #4FA0AE;
+    color:#fff;
+    border-radius:4px;
+}
+.siderbar .avatar {
+    text-align: center;
+    /*background-color: #37A4DC;*/
+}
+.siderbar .avatar img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+}
+.siderbar .information .name{
+    text-align: center;
+    margin:10px auto;
+    font-size:24px;
+}
+.siderbar .information .intention{
+    text-align: center;
+}
+.siderbar .information .introduce{
+    display:flex;
+    margin-top:8px;
+}
+.siderbar .information .introduce svg{
+    width:20px;
+    height:20px;
+    margin:0 20px;
+}
+.siderbar .information .introduce p{
+    flex:1;
+
+}
+.siderbar .information .introduce .QRcode{
+    width:80px;
+    height:80px;
+    vertical-align: top;
+}
+.main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+.main .navigator{
+    display:flex;
+    flex-shrink: 0;
+    justify-content:center;
+    background-color: #fff;
+    color:#737373;
+}
+.main .navigator li{
+    width:33.333333%;
+    text-align: center;
+    background-color: #5CC2F2;
+    /*background-color: #aaa;*/
+    color:#fff;
+    padding:1em;
+    border-radius:4px;
+}
+.main .navigator li:hover{
+    cursor: pointer;
+}
+.main .navigator li.active{
+    background-color: rgb(17,244,252);
+    /*background-color: #5E61FB;*/
+}
+.main .content{
+    flex:1;
+    background-color: #fff;
+    color:RGB(114,114,114);
+    overflow: auto;
+}
+.main .content>li{
+    display:none;
+}
+.main .content>li.active{
+    display:block;
+}
+.main .content>li .skills{
+    padding-left:180px;
+    padding-top:40px;
+}
+.main .content>li .skills>li{
+    position: relative;
+}
+.main .content>li .skills>li:nth-child(-n+3)::before{
+    content:'';
+    display: block;
+    position: absolute;
+    left:-40px;
+    top:35px;
+    width:0;
+    height:100%;
+    border-left:1px solid RGB(114,114,114);
+}
+.main .content>li .skills h2{
+    color:#333;
+    position: relative;
+    line-height:30px;
+}
+.main .content>li .skills h2::before{
+    content: '';
+    position: absolute;
+    top:-5px;
+    left:-60px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:1px solid rgba(114,114,114,1);
+    background:#fff url(//i.loli.net/2017/09/20/59c1f69a2f10e.png) no-repeat center;
+    background-size: cover;
+}
+.main .content>li .skills p{
+    padding:8px 0 8px 40px;
+}
+.main .content>li .projects img{
+    max-height:400px;
+    width:100%;
+}
+.main .content>li .projects>li{
+    margin:32px;
+    box-shadow:0 0 30px 1px
+}
+.main .content>li .projects>li h2{
+    padding:8px;
+}
+.main .content>li .projects>li p{
+    padding:8px;
+}
+.main .content>li .projects .preview{
+    margin-top:16px;
+    display:flex;
+    justify-content:flex-end;
+}
+.main .content>li .projects .preview button{
+    margin-right:8px;
+    margin-bottom:8px;
+}
+.main .content>li .projects .preview a{
+    display:inline-block;
+    padding:6px;
+}
