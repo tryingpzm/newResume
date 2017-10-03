@@ -30,14 +30,13 @@ body{
 }
 .siderbar{
     width:200px;
-    /*background-color: #43B6B1;*/
     background-color: #4FA0AE;
     color:#fff;
     border-radius:4px;
 }
+
 .siderbar .avatar {
     text-align: center;
-    /*background-color: #37A4DC;*/
 }
 .siderbar .avatar img{
     width:120px;
@@ -63,13 +62,13 @@ body{
 }
 .siderbar .information .introduce p{
     flex:1;
-
 }
 .siderbar .information .introduce .QRcode{
     width:80px;
     height:80px;
     vertical-align: top;
 }
+
 .main{
     flex:1;
     display:flex;
@@ -82,6 +81,7 @@ body{
     background-color: #fff;
     color:#737373;
 }
+
 .main .navigator li{
     width:33.333333%;
     text-align: center;
@@ -91,6 +91,7 @@ body{
     padding:1em;
     border-radius:4px;
 }
+
 .main .navigator li:hover{
     cursor: pointer;
 }
@@ -173,4 +174,35 @@ body{
 .main .content>li .projects .preview a{
     display:inline-block;
     padding:6px;
+}
+
+@media (max-width:600px){
+    .siderbar{
+        width:120px;
+        font-size:12px;
+    }
+    .siderbar .information .introduce svg{
+        margin:0;
+    }
+    .siderbar #wechat{
+        display:none;
+    }
+    .main .navigator{
+        font-size:12px;
+    }
+    .main .navigator svg{
+        display:none;
+    }
+    .main .navigator li{
+        padding:1em 0;
+    }
+    .main .content>li .projects>li{
+        margin:10px 0;
+    }
+    .main .content>li .skills{
+        padding-left:0;
+    }
+    .main .content>li .skills p{
+        padding:8px 0 8px 20px;
+    }
 }
