@@ -68,7 +68,16 @@ body{
     height:80px;
     vertical-align: top;
 }
-
+.siderbar #downloadPDF{
+    margin-top:24px;
+    text-align: center;
+}
+.siderbar #downloadPDF a{
+    color:firebrick;
+    border:1px solid;
+    padding:4px;
+    border-radius:5px;
+}
 .main{
     flex:1;
     display:flex;
